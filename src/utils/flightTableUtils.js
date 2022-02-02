@@ -62,9 +62,9 @@ const cellComponents = {
       <p className="results-table__airline-name">{props.row.original.airline.name}</p>
     </div>
   ),
-  detailsUrl: props => {
+  detailsUrl: () => {
     return (
-      <Link to={props.row.original.detailsUrl || '#'} className="results-table__details-url">
+      <Link to={'/'} className="results-table__details-url">
         Flight details
       </Link>
     );
