@@ -6,7 +6,7 @@
 > providing a practical flights browsing system,
 > helping people find their flights schedule fast and easy.
 
-https://art-litv.github.io/airboard/ - project link
+https://sleepy-lumiere-3d052e.netlify.app/departures/?date=2022-02-02 - project link
 
 ## ✨ Features
 
