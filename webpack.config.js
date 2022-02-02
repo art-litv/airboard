@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
   const config = {
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
-      path: path.resolve(__dirname, './build'),
+      path: path.resolve(__dirname, './dist'),
       filename: 'bundle.js',
       publicPath: '/',
     },
@@ -47,7 +47,7 @@ module.exports = (env, argv) => {
     devServer: {
       hot: true,
       historyApiFallback: true,
-      contentBase: path.resolve(__dirname, './build'),
+      contentBase: path.resolve(__dirname, './dist'),
       open: true,
       compress: true,
     },
