@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TableBody({ rows, prepareRow, tableBodyProps }) {
+function TableBody({ rows, prepareRow, tableBodyProps }) {
   return (
     <tbody className="results-table__body" {...tableBodyProps}>
       {rows.map(row => {
@@ -20,3 +20,5 @@ export default function TableBody({ rows, prepareRow, tableBodyProps }) {
     </tbody>
   );
 }
+
+export default TableBody;

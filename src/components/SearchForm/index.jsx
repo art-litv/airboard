@@ -8,7 +8,7 @@ import useRedirectedSubmit from '../../utils/hooks/useRedirectedSubmit';
 
 function SearchForm({ className }) {
   const location = useLocation();
-  const redirectUrl = location.pathname === '/' ? 'departments/' : location.pathname;
+  const redirectUrl = location.pathname;
 
   const handleSubmit = useRedirectedSubmit(redirectUrl);
 

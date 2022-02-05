@@ -2,8 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import { useTable } from 'react-table';
 
-import Header from './Table.Header';
-import Body from './Table.Body';
+import Header from './TableHeader';
+import Body from './TableBody';
 
 import './table.scss';
 

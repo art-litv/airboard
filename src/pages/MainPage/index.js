@@ -1,18 +1,14 @@
 import React from 'react';
-import { useLocation, Outlet } from 'react-router-dom';
-import { stringify } from 'qs';
+import { Outlet } from 'react-router-dom';
 
-import { getDateParams } from '../../utils/urlParams';
 import useEffectRedirect from '../../utils/hooks/useEffectRedirect';
 
 import './main-page.scss';
 
 import SearchForm from '../../components/SearchForm';
 
-export default function MainPage() {
-  const location = useLocation();
-  const queryParams = getDateParams();
-  location.pathname === '/' && useEffectRedirect('/departures/?' + stringify(queryParams), []);
+function MainPage() {
+  useEffectRedirect('/departures', '/');
 
   return (
     <div className="main-page">
@@ -21,3 +17,5 @@ export default function MainPage() {
     </div>
   );
 }
+
+export default MainPage;

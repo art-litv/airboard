@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function useEffectRedirect(path, observeValues) {
+export default function useEffectRedirect(path, redirectFrom) {
+  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate(path);
-  }, observeValues);
+    location.pathname === redirectFrom && navigate(path);
+  }, [location.pathname]);
 }

@@ -10,7 +10,7 @@ import ArrivalSearchResults from './components/SearchResults/ArrivalSearchResult
 
 import { MainPage, NotFoundPage } from './pages';
 
-export default function App() {
+function App() {
   return (
     <div className="app">
       <Provider store={store}>
@@ -34,3 +34,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
